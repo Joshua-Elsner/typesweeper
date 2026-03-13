@@ -10,12 +10,12 @@ color = Color(1.5878411e-06, 0.5543374, 0.5648404, 1)
 script = ExtResource("1_xkukx")
 
 [node name="Label" type="Label" parent="." unique_id=1888726814]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "CAT"
 horizontal_alignment = 1
 vertical_alignment = 1

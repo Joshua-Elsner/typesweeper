@@ -3,7 +3,7 @@ extends GridContainer
 @export var cell_scene: PackedScene
 
 func _ready():
-	columns = 16
-	
 	for i in range(256):
-		pass
+		var new_cell = cell_scene.instantiate()
+		
+		add_child(new_cell)

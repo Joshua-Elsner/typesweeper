@@ -1,30 +1,33 @@
 [gd_scene format=3 uid="uid://cw5kgdkr6fvub"]
 
+[ext_resource type="Script" uid="uid://cau5p1gwngoq8" path="res://main/game_board.gd" id="1_2fwfh"]
 [ext_resource type="PackedScene" uid="uid://cccfe6wjsc8v6" path="res://main/cell.tscn" id="2_2fwfh"]
-
-[sub_resource type="GDScript" id="GDScript_63c7r"]
-script/source = "extends GridContainer
-
-@export var cell_scene: PackedScene
-func _ready():
-	columns = 16
-	
-	for i in range(256):
-		pass
-"
 
 [node name="Game" type="Control" unique_id=26062883]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="GameBoard" type="GridContainer" parent="." unique_id=1786358020]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
 columns = 16
-script = SubResource("GDScript_63c7r")
+script = ExtResource("1_2fwfh")
 cell_scene = ExtResource("2_2fwfh")
-
-[node name="Cell" parent="GameBoard" unique_id=1738752384 instance=ExtResource("2_2fwfh")]
-unique_name_in_owner = true
-layout_mode = 2

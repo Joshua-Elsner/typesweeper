@@ -1,7 +1,17 @@
 [gd_scene format=3 uid="uid://cw5kgdkr6fvub"]
 
-[ext_resource type="Script" uid="uid://cau5p1gwngoq8" path="res://main/game_board.gd" id="1_63c7r"]
 [ext_resource type="PackedScene" uid="uid://cccfe6wjsc8v6" path="res://main/cell.tscn" id="2_2fwfh"]
+
+[sub_resource type="GDScript" id="GDScript_63c7r"]
+script/source = "extends GridContainer
+
+@export var cell_scene: PackedScene
+func _ready():
+	columns = 16
+	
+	for i in range(256):
+		pass
+"
 
 [node name="Game" type="Control" unique_id=26062883]
 layout_mode = 3
@@ -12,148 +22,9 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 columns = 16
-script = ExtResource("1_63c7r")
+script = SubResource("GDScript_63c7r")
+cell_scene = ExtResource("2_2fwfh")
 
 [node name="Cell" parent="GameBoard" unique_id=1738752384 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell17" parent="GameBoard" unique_id=933582192 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell18" parent="GameBoard" unique_id=913488922 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell19" parent="GameBoard" unique_id=479054957 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell20" parent="GameBoard" unique_id=188549998 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell21" parent="GameBoard" unique_id=2065698727 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell22" parent="GameBoard" unique_id=1480916688 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell23" parent="GameBoard" unique_id=1297463627 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell24" parent="GameBoard" unique_id=50606066 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell25" parent="GameBoard" unique_id=562244996 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell26" parent="GameBoard" unique_id=714228342 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell27" parent="GameBoard" unique_id=23000976 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell28" parent="GameBoard" unique_id=288869862 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell29" parent="GameBoard" unique_id=164862029 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell30" parent="GameBoard" unique_id=1026015954 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell31" parent="GameBoard" unique_id=875544273 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell32" parent="GameBoard" unique_id=1240010917 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell33" parent="GameBoard" unique_id=2027626903 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell34" parent="GameBoard" unique_id=1437189121 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell35" parent="GameBoard" unique_id=641005367 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell36" parent="GameBoard" unique_id=954014171 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell37" parent="GameBoard" unique_id=877892083 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell38" parent="GameBoard" unique_id=194480161 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell39" parent="GameBoard" unique_id=1032370785 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell40" parent="GameBoard" unique_id=547071434 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell41" parent="GameBoard" unique_id=1346609280 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell42" parent="GameBoard" unique_id=1500787894 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell43" parent="GameBoard" unique_id=1406292659 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell44" parent="GameBoard" unique_id=1700340397 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell45" parent="GameBoard" unique_id=1920484872 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell46" parent="GameBoard" unique_id=40358272 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell47" parent="GameBoard" unique_id=1197617880 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell48" parent="GameBoard" unique_id=1788892139 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell2" parent="GameBoard" unique_id=1829901337 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell3" parent="GameBoard" unique_id=1749380099 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell4" parent="GameBoard" unique_id=25783730 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell5" parent="GameBoard" unique_id=1495470474 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell6" parent="GameBoard" unique_id=1294036921 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell7" parent="GameBoard" unique_id=587750278 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell8" parent="GameBoard" unique_id=2057033745 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell9" parent="GameBoard" unique_id=591498041 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell10" parent="GameBoard" unique_id=2050579503 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell11" parent="GameBoard" unique_id=861952514 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell12" parent="GameBoard" unique_id=1379012575 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell13" parent="GameBoard" unique_id=907479188 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell14" parent="GameBoard" unique_id=933775410 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell15" parent="GameBoard" unique_id=1880273721 instance=ExtResource("2_2fwfh")]
-layout_mode = 2
-
-[node name="Cell16" parent="GameBoard" unique_id=791351763 instance=ExtResource("2_2fwfh")]
+unique_name_in_owner = true
 layout_mode = 2

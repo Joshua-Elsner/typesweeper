@@ -1,5 +1,7 @@
 extends GridContainer
 
+@export var cell_scene: PackedScene
+
 func _ready():
 	columns = 16
 	
